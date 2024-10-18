@@ -1,3 +1,6 @@
+<!-- 04. - Bindings -->
+<!-- Vue.js Guide: https://vuejs.org/guide/essentials/class-and-style.html -->
+
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
 
