@@ -1,3 +1,6 @@
+<!-- 06. - List Rendering -->
+<!-- Vue.js Guide: https://vuejs.org/guide/essentials/list.html -->
+
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
 
@@ -19,7 +22,7 @@ const myObject = reactive({
     <h2>A listák renderelése</h2>
     <q-list bordered>
       <!-- A v-for vektor bejárása esetén kaphat két ciklusváltozót is -->
-      <!-- Ilyenkor a elem (e) és index (i) ciklusváltozókat zárojelekbe () kell tenni! -->
+      <!-- Ilyenkor az elem (e) és index (i) ciklusváltozókat zárojelekbe () kell tenni! -->
       <!-- A key attributum binding-ja kötelező, egyedi érték kell hogy legyen, itt "e" és "i" is jó -->
       <q-item v-for="(e, i) in napok" :key="i" clickable dense>
         <q-item-section>
